@@ -1,17 +1,12 @@
-# flutter_blog_tut
+# D&D Character Blog
 
-A new Flutter project.
+A Dungeons and Dragons Character blog built with flutter while following a tutorial by Flutter Mapp.
 
-## Getting Started
+## :camera: Screenshots
+### Login 1:
+![Login](https://github.com/T-Pirozzini/flutter-pokemon-game/blob/main/assets/login-screen.png?raw=true)
+### Characters 2:
+![Characters](https://github.com/T-Pirozzini/flutter-pokemon-game/blob/main/assets/character-screen.png?raw=true)
+### Backstory 2:
+![Backstory](https://github.com/T-Pirozzini/flutter-pokemon-game/blob/main/assets/backstory-screen.png?raw=true)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# flutter_blog

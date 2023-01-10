@@ -2,16 +2,39 @@ import 'package:flutter/material.dart';
 import 'package:flutter_blog_tut/description_page.dart';
 import 'package:flutter_blog_tut/main.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  Color backgroundColor = Colors.white;
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         backgroundColor: Colors.red,
         centerTitle: true,
         title: const Text('Characters'),
+        actions: [
+          IconButton(
+            onPressed: () {
+              setState(() {
+                if (backgroundColor == Colors.white) {
+                  backgroundColor = Colors.red;
+                } else {
+                  backgroundColor = Colors.white;
+                }
+              });
+            },
+            icon: const Icon(
+              Icons.color_lens,
+            ),
+          ),
+        ],
       ),
       drawer: SafeArea(
         child: Drawer(
