@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: const LoginPage(),
     );
@@ -49,12 +49,12 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 20.0),            
+            const SizedBox(height: 20.0),
             Image.asset('images/gnomeBard.jpg'),
             const SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).push(
+                Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
                     builder: (BuildContext context) {
                       return const HomePage();
