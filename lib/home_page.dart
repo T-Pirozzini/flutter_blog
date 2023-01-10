@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.red,
         centerTitle: true,
-        title: const Text('Home Page'),
+        title: const Text('Characters'),
       ),
       drawer: SafeArea(
         child: Drawer(
@@ -119,7 +119,10 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                      return const DescriptionPage();
+                      return const DescriptionPage(
+                        title: 'Lila Topple Bother Spark',
+                        imagePath: 'images/gnomeSorceror.png',
+                      );
                     },
                   ),
                 );
@@ -160,7 +163,10 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                      return const DescriptionPage();
+                      return const DescriptionPage(
+                        title: 'Shylo Wonder Butt Smiley Face',
+                        imagePath: 'images/gnomeArtificer.jpg',
+                      );
                     },
                   ),
                 );
@@ -201,7 +207,10 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (BuildContext context) {
-                      return const DescriptionPage();
+                      return const DescriptionPage(
+                        title: 'Zen Patience Pal In Blue Shorts',
+                        imagePath: 'images/gnomeMonk.jpg',
+                      );
                     },
                   ),
                 );
